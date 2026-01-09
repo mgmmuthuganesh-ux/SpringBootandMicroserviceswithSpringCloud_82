@@ -9,17 +9,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class Order {
 
-    private final BillmanagerappApplication billmanagerappApplication;
 	
 	@Autowired
 	private Menu menu;
 	
 	@Autowired
 	private BillingProcessor billing;
-
-    Order(BillmanagerappApplication billmanagerappApplication) {
-        this.billmanagerappApplication = billmanagerappApplication;
-    }
 
 	public void placeOrder() {
 		

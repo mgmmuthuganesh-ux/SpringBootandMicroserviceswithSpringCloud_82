@@ -1,0 +1,67 @@
+<style>
+.header {
+	text-align: center;
+	font-size: 2em;
+	background-color: teal;
+	color: white;
+}
+
+.search {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.container {
+	justify-content: center;
+	display: flex;
+}
+
+table, tr, th, td {
+	border: 1px solid;
+}
+</style>
+<div class="header">
+	<h1>Products</h1>
+</div>
+<div class="search">
+	<form action="/search">
+		<input type="text" name="name">
+		<button type="submit">SEARCH</button>
+	</form>
+	<button>
+		<a href="/add">ADD PRODUCT</a>
+	</button>
+</div>
+<div class="container">
+	<table>
+		<thead>
+			<tr>
+				<th>PID</th>
+				<th>NAME</th>
+				<th>QUANTITY</th>
+				<th>STATUS</th>
+				<th>ACTIONS</th>
+		</thead>
+		<tbody>
+			<tr th:each="product:${productList}">
+				<td th:text="${product.pid}"></td>
+				<td th:text="${product.name}"></td>
+				<td th:text="${product.qty}"></td>
+				<td th:text="${product.status}"></td>
+				<td>
+					<button>
+						<a th:href="@{/update/{id}(id=${product.pid})}">UPDATE</a>
+					</button>
+					<button>
+						<a th:href="@{/delete/{id}(id=${product.pid})}">DELETE</a>
+					</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+

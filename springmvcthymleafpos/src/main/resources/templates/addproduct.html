@@ -1,0 +1,31 @@
+<style>
+.header {
+	text-align: center;
+	font-size: 2em;
+	background-color: teal;
+	color: white;
+}
+
+.container {
+	justify-content: center;
+	display: flex;
+}
+
+.container input {
+	margin-bottom: 10px;
+	height: 2em;
+	padding: 5px 6px;
+}
+</style>
+<div class="header">
+	<h1>ADD PRODUCT</h1>
+</div>
+<div class="container">
+	<form method="post" action="/save">
+		<input type="hidden" name="pid" th:value="${prd.pid}"> </br> NAME :
+		<input type="text" name="name" th:value="${prd.name}"> </br>
+		Quantuty : <input type="number" name="qty" th:value="${prd.qty}">
+		</br> STATUS : <input type="text" name="status" th:value="${prd.status}">
+		</br> <input type="submit">
+	</form>
+</div>

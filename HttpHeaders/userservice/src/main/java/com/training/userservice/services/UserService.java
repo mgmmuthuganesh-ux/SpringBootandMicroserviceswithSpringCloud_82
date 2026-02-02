@@ -44,7 +44,7 @@ public class UserService {
 	}
 	
 	public User updateUser(Integer uid,User user) {
-		User existingUser = getUserById(user.getUid());
+		User existingUser = getUserById(uid);
 		existingUser.setName(user.getName()!=null?user.getName():existingUser.getName());
 		existingUser.setEmail(user.getEmail()!=null?user.getEmail():existingUser.getEmail());
 		existingUser.setAddress(user.getAddress()!=null?user.getAddress():existingUser.getAddress());

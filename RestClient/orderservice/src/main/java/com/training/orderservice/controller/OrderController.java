@@ -24,13 +24,12 @@ public class OrderController {
 	OrderRepository repo;
 	
 	@GetMapping("/greet")
-	public String greet(@RequestHeader("service_name") String reqheader) {
-		System.out.println("service requested "+reqheader);
+	public String greet() {
 		return "Greetings from OrderService";
 	}
 	
 	@GetMapping("/uid/{uid}")
-	public List<Order> getOrderByUid(@RequestHeader("service_name") String reqheader,@PathVariable Integer uid){
+	public List<Order> getOrderByUid(@PathVariable Integer uid){
 		return repo.findByUid(uid);
 	}
 	

@@ -33,3 +33,8 @@
     ]
 }
 ```
+# Swagger Url
+
+UI : http://localhost:8080/swagger-ui.html (gives swagger UI)
+
+api : http://localhost:8080/v3/api-docs (gives in json)

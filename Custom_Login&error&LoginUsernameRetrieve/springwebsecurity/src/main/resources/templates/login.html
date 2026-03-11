@@ -1,0 +1,19 @@
+<style>
+#error{
+color: red;
+}
+#logout{
+color: green;
+}
+</style>
+
+<center>
+<h1>Custom Login</h1>
+<div th:if="${param.error}" id="error"> UserName/Password not matched </div>
+<div th:if="${param.logout}" id="logout"> LOgged out succefully </div>
+<form method="post" action="/login">
+Username: <input type="text" name="username"></br>
+Password: <input type="password" name="password"></br>
+<input type="submit" value="LOGIN">
+</form>
+</center>

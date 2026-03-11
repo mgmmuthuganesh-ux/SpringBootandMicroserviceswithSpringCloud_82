@@ -1,0 +1,12 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<center>
+
+	<h1 style="color: red">Welcome <span sec:authentication="name">Username</span></h1>
+	<button><a href="/manager">MANAGER</a></button>
+	&nbsp;&nbsp;
+	<button><a href="/admin">ADMIN</a></button>
+	&nbsp;&nbsp;
+	<button><a href="/logout">LOGOUT</a>
+	</button>
+</center>
+</html>

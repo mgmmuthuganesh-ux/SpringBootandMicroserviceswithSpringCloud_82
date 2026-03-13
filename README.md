@@ -106,13 +106,15 @@ Check the credentials. If still the error persists then follow below steps:
 
 ![KEYCLOAK troublShoot ](https://github.com/HarshaPrimeTrainings/spring_boot_microservices_55/blob/main/keycloaktroubleshoot.jpg)
 
-Error like
+* Error like
+
 ``
 {
     "error": "unauthorized_client",
     "error_description": "Client not allowed for direct access grants"
 }
 ``
+
 Then go to client settings check the checkbox Direct access grants at Capability config
 ![KEYCLOAK troublShoot ](https://github.com/HarshaPrimeTrainings/SpringBootandMicroserviceswithSpringCloud_82/blob/main/directaccess.PNG)
 

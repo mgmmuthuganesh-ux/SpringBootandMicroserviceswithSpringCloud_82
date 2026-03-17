@@ -166,10 +166,12 @@ services:
 - Here application running in container and Mysql Running in Local Machine.
 - A very common Docker networking issue. Inside a container, localhost refers to the container itself, not your host machine. So when your Spring Boot app tries to connect to localhost:3306 it looks for MySQL inside the container, not on your local machine.
 # Recomended Solution 
-Docker provides a special hostname to access the host machine from inside containers i.e host.docker.internal
+Docker provides a special hostname to access the host machine from inside containers i.e `host.docker.internal`
+```
 spring.datasource.url=jdbc:mysql://host.docker.internal:3306/your_db
 spring.datasource.username=root
 spring.datasource.password=yourpassword
+```
 
 # If still unable to connect then Verify MySQL Allows External Connections.
 

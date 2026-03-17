@@ -182,7 +182,7 @@ SELECT host,user FROM mysql.user;
 
 # Allow MySQL Connections from Docker
 - Open MySQL Workbench
-- Go to Server → Users and Privileges
+- Go to Server -> Users and Privileges
 - Click Add Account
 - Fill:
 ```

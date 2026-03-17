@@ -173,7 +173,7 @@ spring.datasource.username=root
 spring.datasource.password=yourpassword
 ```
 - If still unable to connect then 
-# Verify MySQL Allows External Connections.
+# Verify MySQL Allows External Connections ?
 
 This query gives allowed hosts.
 ```

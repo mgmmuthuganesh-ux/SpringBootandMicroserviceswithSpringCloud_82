@@ -183,6 +183,7 @@ SELECT host,user FROM mysql.user;
 # Allow MySQL Connections from Docker
 - Open MySQL Workbench
 - Go to Server -> Users and Privileges
+![KEYCLOAK Token Testing ](https://github.com/HarshaPrimeTrainings/79_springbootandmicroservices/blob/main/mysql.PNG)
 - Click Add Account
 - Fill:
 ```

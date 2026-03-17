@@ -172,8 +172,8 @@ spring.datasource.url=jdbc:mysql://host.docker.internal:3306/your_db
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 ```
-
-# If still unable to connect then Verify MySQL Allows External Connections.
+- If still unable to connect then 
+# Verify MySQL Allows External Connections.
 
 This query gives allowed hosts.
 ```
